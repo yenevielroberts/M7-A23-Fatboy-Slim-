@@ -6,7 +6,7 @@ use Slim\Factory\AppFactory;
 require __DIR__ . '/../vendor/autoload.php';
 
 $pdo= new PDO ('sqlite:'. __DIR__.'/../Slim/data/database.sqlite');
-$pdo->setAttribute(PDO::AFTER_ERRMODE, PEDO:: ERRMODE_EXCEPTION);
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 // Instantiate App
 $app = AppFactory::create();
 
@@ -89,6 +89,9 @@ $app->get('/', function (Request $request, Response $response) use ($pdo){
     
     
     `;
+
+    $response->getBody()->write($htmlContent);
+    return $response->withHeader('Content-type', 'text/html');
    
 });
 
