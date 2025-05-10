@@ -1,0 +1,225 @@
+/* Reset básico */
+* {
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121212;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding-bottom: 100px; /* espacio para el footer */
+}
+
+/* Header y navegación */
+header {
+    background: #1e1e1e;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav h2 {
+    font-size: 1.8rem;
+    color: #00ffe5;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a {
+    display: flex;
+    width: 100px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a:hover {
+    color: #00ffe5;
+}
+
+#enlancesNav{
+    width: 600px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Contenido principal */
+div {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+div h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00ffe5;
+}
+
+div img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+
+p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Secciones de canciones y álbumes */
+a{
+    text-decoration: none;
+}
+#canciones_po {
+    margin-top: 2rem;
+}
+
+#canciones_po p {
+   
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#canciones_po p::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #00ffe5;
+    transition: width 0.3s ease;
+}
+
+#canciones_po p:hover {
+    color: #00ffe5;
+}
+
+#canciones_po p:hover::after {
+    width: 100%;
+}
+
+/*Álbumes*/
+
+#albumes_po{
+
+    margin-top: 2rem;
+    padding: 10px;
+
+}
+
+#albumes_po img{
+
+    width: 200px;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: block;
+    float: left;
+}
+
+#albumes_po h3 {
+
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 0.5rem;
+    color: #00ffe5;
+}
+
+#album_info{
+    margin-top: 5px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    padding:5px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+li {
+    background-color: #1f1f1f;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 255, 229, 0.1);
+}
+
+/*footer*/
+footer {
+    background: #1e1e1e;
+    padding: 2rem;
+    text-align: center;
+    color: #aaa;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: #aaa;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00ffe5;
+}
+
+#favBtn {
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s;
+}
+
+#favBtn:hover {
+    background-color: #00ffe5;
+    color: black;
+}

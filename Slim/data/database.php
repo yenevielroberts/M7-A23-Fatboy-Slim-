@@ -58,62 +58,62 @@ $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url,
 /* Insertar canciones para Twenty One Pilots */
 
 $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url, album, lyrics, story_summary) VALUES
-(2, 'Stressed Out', 2015, 950000000, 'https://example.com/stressed.jpg', 'Blurryface', 'Lyrics...', 'Nostalgia por la infancia.'),
-(2, 'Ride', 2015, 850000000, 'https://example.com/ride.jpg', 'Blurryface', 'Lyrics...', 'Duda existencial sobre el destino.'),
-(2, 'Heathens', 2016, 900000000, 'https://example.com/heathens.jpg', 'Suicide Squad OST', 'Lyrics...', 'Alienación y confianza.'),
-(2, 'Tear in My Heart', 2015, 400000000, 'https://example.com/tear.jpg', 'Blurryface', 'Lyrics...', 'Una canción de amor sarcástica.'),
-(2, 'Jumpsuit', 2018, 300000000, 'https://example.com/jumpsuit.jpg', 'Trench', 'Lyrics...', 'Sobre protección y ansiedad.'),
-(2, 'Chlorine', 2018, 450000000, 'https://example.com/chlorine.jpg', 'Trench', 'Lyrics...', 'Purificación a través del dolor.');");
+(3, 'Stressed Out', 2015, 950000000, 'https://example.com/stressed.jpg', 'Blurryface', 'Lyrics...', 'Nostalgia por la infancia.'),
+(3, 'Ride', 2015, 850000000, 'https://example.com/ride.jpg', 'Blurryface', 'Lyrics...', 'Duda existencial sobre el destino.'),
+(3, 'Heathens', 2016, 900000000, 'https://example.com/heathens.jpg', 'Suicide Squad OST', 'Lyrics...', 'Alienación y confianza.'),
+(3, 'Tear in My Heart', 2015, 400000000, 'https://example.com/tear.jpg', 'Blurryface', 'Lyrics...', 'Una canción de amor sarcástica.'),
+(3, 'Jumpsuit', 2018, 300000000, 'https://example.com/jumpsuit.jpg', 'Trench', 'Lyrics...', 'Sobre protección y ansiedad.'),
+(3, 'Chlorine', 2018, 450000000, 'https://example.com/chlorine.jpg', 'Trench', 'Lyrics...', 'Purificación a través del dolor.');");
 
 /* Insertar canciones para Bleachers */
 
 $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url, album, lyrics, story_summary) VALUES
-(3, 'I Wanna Get Better', 2014, 400000000, 'https://example.com/getbetter.jpg', 'Strange Desire', 'Lyrics...', 'Una llamada al cambio y la superación personal.'),
-(3, 'Rollercoaster', 2014, 350000000, 'https://example.com/rollercoaster.jpg', 'Strange Desire', 'Lyrics...', 'Una historia de amor corta pero intensa.'),
-(3, 'Don’t Take the Money', 2017, 500000000, 'https://example.com/donttake.jpg', 'Gone Now', 'Lyrics...', 'Sobre las inseguridades dentro de una relación.'),
-(3, 'Shadow', 2017, 300000000, 'https://example.com/shadow.jpg', 'Gone Now', 'Lyrics...', 'Explora los altibajos de la vida y la lucha interna.'),
-(3, 'Chateau', 2017, 400000000, 'https://example.com/chateau.jpg', 'Gone Now', 'Lyrics...', 'Refleja la búsqueda de un lugar emocional seguro.'),
-(3, 'Hate That You Know Me', 2019, 250000000, 'https://example.com/hate.jpg', 'Take the Money and Run', 'Lyrics...', 'Conflictos personales en relaciones complicadas.');");
+(5, 'I Wanna Get Better', 2014, 400000000, 'https://example.com/getbetter.jpg', 'Strange Desire', 'Lyrics...', 'Una llamada al cambio y la superación personal.'),
+(5, 'Rollercoaster', 2014, 350000000, 'https://example.com/rollercoaster.jpg', 'Strange Desire', 'Lyrics...', 'Una historia de amor corta pero intensa.'),
+(5, 'Don’t Take the Money', 2017, 500000000, 'https://example.com/donttake.jpg', 'Gone Now', 'Lyrics...', 'Sobre las inseguridades dentro de una relación.'),
+(5, 'Shadow', 2017, 300000000, 'https://example.com/shadow.jpg', 'Gone Now', 'Lyrics...', 'Explora los altibajos de la vida y la lucha interna.'),
+(5, 'Chateau', 2017, 400000000, 'https://example.com/chateau.jpg', 'Gone Now', 'Lyrics...', 'Refleja la búsqueda de un lugar emocional seguro.'),
+(5, 'Hate That You Know Me', 2019, 250000000, 'https://example.com/hate.jpg', 'Take the Money and Run', 'Lyrics...', 'Conflictos personales en relaciones complicadas.');");
 
 /*Insertar canciones para Doja Cat */
 
 $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url, album, lyrics, story_summary) VALUES
-(4, 'Say So', 2020, 1200000000, 'https://example.com/sayso.jpg', 'Hot Pink', 'Lyrics...', 'Un tema pegajoso y sensual sobre el cortejo.'),
-(4, 'Woman', 2021, 900000000, 'https://example.com/woman.jpg', 'Planet Her', 'Lyrics...', 'Empoderamiento femenino con un estilo tropical.'),
-(4, 'Kiss Me More', 2021, 1500000000, 'https://example.com/kissme.jpg', 'Planet Her', 'Lyrics...', 'Explora el deseo y la atracción romántica.'),
-(4, 'Moo!', 2018, 400000000, 'https://example.com/moo.jpg', 'Moo!', 'Lyrics...', 'Una canción divertida y excéntrica sobre su personalidad.'),
-(4, 'Juicy', 2019, 700000000, 'https://example.com/juicy.jpg', 'Hot Pink', 'Lyrics...', 'Una mezcla de empoderamiento y sensualidad.'),
-(4, 'Like That', 2020, 600000000, 'https://example.com/likethat.jpg', 'Hot Pink', 'Lyrics...', 'Un tema pegajoso que mezcla rap y pop.');");
+(6, 'Say So', 2020, 1200000000, 'https://example.com/sayso.jpg', 'Hot Pink', 'Lyrics...', 'Un tema pegajoso y sensual sobre el cortejo.'),
+(6, 'Woman', 2021, 900000000, 'https://example.com/woman.jpg', 'Planet Her', 'Lyrics...', 'Empoderamiento femenino con un estilo tropical.'),
+(6, 'Kiss Me More', 2021, 1500000000, 'https://example.com/kissme.jpg', 'Planet Her', 'Lyrics...', 'Explora el deseo y la atracción romántica.'),
+(6, 'Moo!', 2018, 400000000, 'https://example.com/moo.jpg', 'Moo!', 'Lyrics...', 'Una canción divertida y excéntrica sobre su personalidad.'),
+(6, 'Juicy', 2019, 700000000, 'https://example.com/juicy.jpg', 'Hot Pink', 'Lyrics...', 'Una mezcla de empoderamiento y sensualidad.'),
+(6, 'Like That', 2020, 600000000, 'https://example.com/likethat.jpg', 'Hot Pink', 'Lyrics...', 'Un tema pegajoso que mezcla rap y pop.');");
 
 /*Insertar canciones para The Chainsmokers */
 
 $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url, album, lyrics, story_summary) VALUES
-(5, 'Closer', 2016, 2000000000, 'https://example.com/closer.jpg', 'Collage', 'Lyrics...', 'Historia de una relación atrapada entre el pasado y el presente.'),
-(5, 'Paris', 2017, 900000000, 'https://example.com/paris.jpg', 'Memories...Do Not Open', 'Lyrics...', 'Una reflexión sobre la juventud y los recuerdos.'),
-(5, 'Something Just Like This', 2017, 1800000000, 'https://example.com/something.jpg', 'Memories...Do Not Open', 'Lyrics...', 'La búsqueda de un amor auténtico.'),
-(5, 'Don’t Let Me Down', 2016, 1400000000, 'https://example.com/dontlet.jpg', 'Collage', 'Lyrics...', 'Temor a perder la relación en un momento crítico.'),
-(5, 'Roses', 2015, 950000000, 'https://example.com/roses.jpg', 'Collage', 'Lyrics...', 'Explora el amor espontáneo y la alegría compartida.'),
-(5, 'Call You Mine', 2019, 700000000, 'https://example.com/callyoumine.jpg', 'World War Joy', 'Lyrics...', 'El deseo de mantener una relación fuerte y unida.');");
+(7, 'Closer', 2016, 2000000000, 'https://example.com/closer.jpg', 'Collage', 'Lyrics...', 'Historia de una relación atrapada entre el pasado y el presente.'),
+(7, 'Paris', 2017, 900000000, 'https://example.com/paris.jpg', 'Memories...Do Not Open', 'Lyrics...', 'Una reflexión sobre la juventud y los recuerdos.'),
+(7, 'Something Just Like This', 2017, 1800000000, 'https://example.com/something.jpg', 'Memories...Do Not Open', 'Lyrics...', 'La búsqueda de un amor auténtico.'),
+(7, 'Don’t Let Me Down', 2016, 1400000000, 'https://example.com/dontlet.jpg', 'Collage', 'Lyrics...', 'Temor a perder la relación en un momento crítico.'),
+(7, 'Roses', 2015, 950000000, 'https://example.com/roses.jpg', 'Collage', 'Lyrics...', 'Explora el amor espontáneo y la alegría compartida.'),
+(7, 'Call You Mine', 2019, 700000000, 'https://example.com/callyoumine.jpg', 'World War Joy', 'Lyrics...', 'El deseo de mantener una relación fuerte y unida.');");
 
 /*Insertar canciones para Dean Lewis */
 
 $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url, album, lyrics, story_summary) VALUES
-(6, 'Be Alright', 2018, 900000000, 'https://example.com/bealright.jpg', 'A Place We Knew', 'Lyrics...', 'Sobre la esperanza y la sanación después de la ruptura.'),
-(6, 'Waves', 2016, 500000000, 'https://example.com/waves.jpg', 'Same Kind of Different', 'Lyrics...', 'Reflexión sobre la naturaleza volátil de la vida.'),
-(6, 'Stay Awake', 2019, 300000000, 'https://example.com/stayawake.jpg', 'Single', 'Lyrics...', 'Cansancio emocional y la lucha interna de quedarse despierto.'),
-(6, 'Half a Man', 2019, 200000000, 'https://example.com/halfman.jpg', 'A Place We Knew', 'Lyrics...', 'La sensación de no ser completo tras una pérdida.'),
-(6, 'The Hate I Need', 2019, 150000000, 'https://example.com/hate.jpg', 'Same Kind of Different', 'Lyrics...', 'Explora los conflictos internos y la necesidad de liberarse.'),
-(6, 'You', 2020, 100000000, 'https://example.com/you.jpg', 'Single', 'Lyrics...', 'Reflexión sobre el amor incondicional y la vulnerabilidad.');");
+(9, 'Be Alright', 2018, 900000000, 'https://example.com/bealright.jpg', 'A Place We Knew', 'Lyrics...', 'Sobre la esperanza y la sanación después de la ruptura.'),
+(9, 'Waves', 2016, 500000000, 'https://example.com/waves.jpg', 'Same Kind of Different', 'Lyrics...', 'Reflexión sobre la naturaleza volátil de la vida.'),
+(9, 'Stay Awake', 2019, 300000000, 'https://example.com/stayawake.jpg', 'Single', 'Lyrics...', 'Cansancio emocional y la lucha interna de quedarse despierto.'),
+(9, 'Half a Man', 2019, 200000000, 'https://example.com/halfman.jpg', 'A Place We Knew', 'Lyrics...', 'La sensación de no ser completo tras una pérdida.'),
+(9, 'The Hate I Need', 2019, 150000000, 'https://example.com/hate.jpg', 'Same Kind of Different', 'Lyrics...', 'Explora los conflictos internos y la necesidad de liberarse.'),
+(9, 'You', 2020, 100000000, 'https://example.com/you.jpg', 'Single', 'Lyrics...', 'Reflexión sobre el amor incondicional y la vulnerabilidad.');");
 
 /* Insertar canciones para Muse*/
 
 $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url, album, lyrics, story_summary) VALUES
-(7, 'Uprising', 2009, 1000000000, 'https://example.com/uprising.jpg', 'The Resistance', 'Lyrics...', 'Una protesta contra el control social y la manipulación.'),
-(7, 'Starlight', 2006, 800000000, 'https://example.com/starlight.jpg', 'Black Holes and Revelations', 'Lyrics...', 'Una oda a la soledad y el amor inalcanzable.'),
-(7, 'Madness', 2012, 950000000, 'https://example.com/madness.jpg', 'The 2nd Law', 'Lyrics...', 'Refleja el caos emocional dentro de una relación tóxica.'),
-(7, 'Time Is on My Side', 2010, 500000000, 'https://example.com/timeis.jpg', 'The Resistance', 'Lyrics...', 'Habla sobre la paciencia y la perspectiva en el tiempo.'),
-(7, 'Supermassive Black Hole', 2006, 600000000, 'https://example.com/supermassive.jpg', 'Black Holes and Revelations', 'Lyrics...', 'Una explosión de energía sobre la lucha interna.'),
-(7, 'Pressure', 2018, 400000000, 'https://example.com/pressure.jpg', 'Simulation Theory', 'Lyrics...', 'Explora la ansiedad y la presión que enfrentan las personas en la vida moderna.');");
+(10, 'Uprising', 2009, 1000000000, 'https://example.com/uprising.jpg', 'The Resistance', 'Lyrics...', 'Una protesta contra el control social y la manipulación.'),
+(10, 'Starlight', 2006, 800000000, 'https://example.com/starlight.jpg', 'Black Holes and Revelations', 'Lyrics...', 'Una oda a la soledad y el amor inalcanzable.'),
+(10, 'Madness', 2012, 950000000, 'https://example.com/madness.jpg', 'The 2nd Law', 'Lyrics...', 'Refleja el caos emocional dentro de una relación tóxica.'),
+(10, 'Time Is on My Side', 2010, 500000000, 'https://example.com/timeis.jpg', 'The Resistance', 'Lyrics...', 'Habla sobre la paciencia y la perspectiva en el tiempo.'),
+(10, 'Supermassive Black Hole', 2006, 600000000, 'https://example.com/supermassive.jpg', 'Black Holes and Revelations', 'Lyrics...', 'Una explosión de energía sobre la lucha interna.'),
+(10, 'Pressure', 2018, 400000000, 'https://example.com/pressure.jpg', 'Simulation Theory', 'Lyrics...', 'Explora la ansiedad y la presión que enfrentan las personas en la vida moderna.');");
 
 /* Insertar canciones para Chloe*/
 $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url, album, lyrics, story_summary) VALUES
@@ -126,21 +126,21 @@ $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url,
 
 /* Insertar canciones para Tems*/
 $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url, album, lyrics, story_summary) VALUES
-(9, 'Essence', 2020, 1500000000, 'https://example.com/essence.jpg', 'Made in Lagos', 'Lyrics...', 'Una canción sobre el amor y la atracción profunda con un ritmo afrobeats relajado.'),
-(9, 'Free Mind', 2021, 800000000, 'https://example.com/freemind.jpg', 'If Orange Was a Place', 'Lyrics...', 'Sobre la introspección, la salud mental y la búsqueda de paz.'),
-(9, 'Higher', 2021, 500000000, 'https://example.com/higher.jpg', 'If Orange Was a Place', 'Lyrics...', 'Una canción sobre superar los desafíos y seguir adelante con determinación.'),
-(9, 'Try Me', 2019, 600000000, 'https://example.com/tryme.jpg', 'Tems EP', 'Lyrics...', 'Refleja la actitud de no dejarse manipular o derrotar en una relación.'),
-(9, 'Damages', 2020, 700000000, 'https://example.com/damages.jpg', 'If Orange Was a Place', 'Lyrics...', 'Una reflexión sobre las cicatrices emocionales de una relación fallida.'),
-(9, 'The Key', 2021, 450000000, 'https://example.com/thekey.jpg', 'If Orange Was a Place', 'Lyrics...', 'Habla de la búsqueda del amor verdadero y la conexión genuina.');");
+(4, 'Essence', 2020, 1500000000, 'https://example.com/essence.jpg', 'Made in Lagos', 'Lyrics...', 'Una canción sobre el amor y la atracción profunda con un ritmo afrobeats relajado.'),
+(4, 'Free Mind', 2021, 800000000, 'https://example.com/freemind.jpg', 'If Orange Was a Place', 'Lyrics...', 'Sobre la introspección, la salud mental y la búsqueda de paz.'),
+(4, 'Higher', 2021, 500000000, 'https://example.com/higher.jpg', 'If Orange Was a Place', 'Lyrics...', 'Una canción sobre superar los desafíos y seguir adelante con determinación.'),
+(4, 'Try Me', 2019, 600000000, 'https://example.com/tryme.jpg', 'Tems EP', 'Lyrics...', 'Refleja la actitud de no dejarse manipular o derrotar en una relación.'),
+(4, 'Damages', 2020, 700000000, 'https://example.com/damages.jpg', 'If Orange Was a Place', 'Lyrics...', 'Una reflexión sobre las cicatrices emocionales de una relación fallida.'),
+(4, 'The Key', 2021, 450000000, 'https://example.com/thekey.jpg', 'If Orange Was a Place', 'Lyrics...', 'Habla de la búsqueda del amor verdadero y la conexión genuina.');");
 
 /*Insertar canciones para Myles Smith*/
 $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url, album, lyrics, story_summary) VALUES
-(10, 'Rain', 2020, 300000000, 'https://example.com/rain.jpg', 'Rain EP', 'Lyrics...', 'Una balada emocional sobre superar la tristeza y la tormenta emocional.'),
-(10, 'Lost In You', 2021, 250000000, 'https://example.com/lostinyou.jpg', 'Single', 'Lyrics...', 'Sobre el amor profundo y la devoción a alguien que te hace perder el control.'),
-(10, 'The One', 2021, 400000000, 'https://example.com/theone.jpg', 'Single', 'Lyrics...', 'Refleja la búsqueda del amor verdadero y cómo ese amor te cambia para siempre.'),
-(10, 'Hold Me Tight', 2022, 220000000, 'https://example.com/holdmetight.jpg', 'Hold Me Tight', 'Lyrics...', 'Una canción sobre la necesidad de amor y compañía en tiempos difíciles.'),
-(10, 'With You', 2022, 180000000, 'https://example.com/withyou.jpg', 'With You EP', 'Lyrics...', 'Una balada sobre la importancia de estar con alguien que te apoya en todo momento.'),
-(10, 'Back To You', 2023, 250000000, 'https://example.com/backtoyou.jpg', 'Single', 'Lyrics...', 'Habla sobre la necesidad de regresar a alguien especial a pesar de las dificultades que se han vivido.');");
+(2, 'Rain', 2020, 300000000, 'https://example.com/rain.jpg', 'Rain EP', 'Lyrics...', 'Una balada emocional sobre superar la tristeza y la tormenta emocional.'),
+(2, 'Lost In You', 2021, 250000000, 'https://example.com/lostinyou.jpg', 'Single', 'Lyrics...', 'Sobre el amor profundo y la devoción a alguien que te hace perder el control.'),
+(2, 'The One', 2021, 400000000, 'https://example.com/theone.jpg', 'Single', 'Lyrics...', 'Refleja la búsqueda del amor verdadero y cómo ese amor te cambia para siempre.'),
+(2, 'Hold Me Tight', 2022, 220000000, 'https://example.com/holdmetight.jpg', 'Hold Me Tight', 'Lyrics...', 'Una canción sobre la necesidad de amor y compañía en tiempos difíciles.'),
+(2, 'With You', 2022, 180000000, 'https://example.com/withyou.jpg', 'With You EP', 'Lyrics...', 'Una balada sobre la importancia de estar con alguien que te apoya en todo momento.'),
+(2, 'Back To You', 2023, 250000000, 'https://example.com/backtoyou.jpg', 'Single', 'Lyrics...', 'Habla sobre la necesidad de regresar a alguien especial a pesar de las dificultades que se han vivido.');");
 
 
 
