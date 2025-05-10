@@ -1,0 +1,204 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 100px;
+    line-height: 1.6;
+}
+
+/* Header y navegación */
+header {
+    background: #1e1e1e;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav h2 {
+    font-size: 1.8rem;
+    color: #00ffe5;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a {
+    display: flex;
+    width: 100px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a:hover {
+    color: #00ffe5;
+}
+
+#enlancesNav{
+    width: 600px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Contenido principal */
+div {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+div a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+div a:hover {
+    color: #00ffe5;
+}
+
+div h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: #00ffe5;
+}
+
+div h3 {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+}
+
+p {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+ #img_cancion {
+    margin: 15px;
+    display: flex;
+    float: left;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 1rem;
+    background-color: #333;
+    margin-left: 0px;
+}
+
+/* Sección álbum */
+#albumes_po {
+    margin-top: 2rem;
+}
+
+#albumes_po h3 {
+    margin: 20px;
+    float: left;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #00ffe5;
+    padding-bottom: 0.3rem;
+}
+
+#albumes_po img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 1rem;
+    background-color: #333;
+}
+
+/* Sección estadísticas */
+#estadisticas {
+    background-color: #1f1f1f;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 255, 229, 0.1);
+}
+
+/*footer*/
+footer {
+    background: #1e1e1e;
+    padding: 2rem;
+    text-align: center;
+    color: #aaa;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: #aaa;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00ffe5;
+}
+
+/*Boton favoritos*/
+#favBtn {
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: left;
+}
+
+#favBtn:hover {
+    background-color: #00ffe5;
+    color: black;
+}
+
+#titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20px;
+}
+
+i{
+    margin-left: 1rem;
+    font-size: 2rem;
+}

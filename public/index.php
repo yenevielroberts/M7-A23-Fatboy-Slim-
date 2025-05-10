@@ -24,9 +24,9 @@ $app->get('/', function (Request $request, Response $response) use ($pdo){
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' href='../css/style.css'>
-    <script src='../scripts/header.js' defer></script>
-    <script src='../scripts/footer.js' defer></script>
+    <link rel='stylesheet' href='/css/style.css'>
+    <script src='/scripts/header.js' defer></script>
+    <script src='/scripts/footer.js' defer></script>
     <title>Home</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css'>
     <script src='scripts/index.js' defer></script>
@@ -41,7 +41,7 @@ $app->get('/', function (Request $request, Response $response) use ($pdo){
         <h2>Artistas más escuchados</h2>
         <div id='lista-artistas'>";
         foreach($artistas as $artista){
-        $encodedName = urlencode($artista['stage_name']);
+        $encodedName = urlencode($artista['stage_name']);//codifico el nombre por si tiene espacios
             $htmlContent.="
             <div>
             <h3>{$artista['stage_name']}</h3>
@@ -49,15 +49,6 @@ $app->get('/', function (Request $request, Response $response) use ($pdo){
             </div>";
         }
         $htmlContent.='</div>
-    </section>
-
-    <section id="canciones">
-        <h2>Canciones populares</h2>
-        <div id="lista-canciones">
-        </div>
-        <button id="verMasCanciones" class="arrow-button">
-            <i class="fas fa-chevron-down"></i> <!-- Ícono de flecha -->
-        </button>
     </section>
     <footer id="footer">
     </footer>
@@ -71,6 +62,7 @@ $app->get('/', function (Request $request, Response $response) use ($pdo){
 });
 
 
+//artista página de detalle
 $app->get('/detalle_artistas/{name}', function($request, Response $response,$args) use($pdo){
     // Recuperar el nombre del artista de la URL y reemplazar los signos de '+' por espacios
     $stage_name = str_replace('+', ' ', htmlspecialchars($args['name']));
@@ -92,18 +84,19 @@ $app->get('/detalle_artistas/{name}', function($request, Response $response,$arg
     $stm_canc->execute();
     $canciones=$stm_canc->fetchAll(PDO::FETCH_ASSOC);
 
+    $encodedName = urlencode($artista['stage_name']);
     $htmlContent="<!DOCTYPE html>
 <html lang='en'>
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' href='../css/artista.css'>
-    <script src='../scripts/header.js' defer></script>
-    <script src='../scripts/footer.js' defer></script>
+    <link rel='stylesheet' href='/css/artista.css'>
+    <script src='/scripts/header.js' defer></script>
+    <script src='/scripts/footer.js' defer></script>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css'>
     <script src='scriptArtista.js' defer></script>
 
-    <title>Artita</title>
+    <title>Artista</title>
 </head>
 
 <body>
@@ -114,16 +107,15 @@ $app->get('/detalle_artistas/{name}', function($request, Response $response,$arg
     <h2 id='art_nom'>{$artista['stage_name']}</h2>
     <button id='favBtn'><i class='fa-regular fa-heart'></i> Agregar a favoritos</button>
     <img src='{$artista['image_url']}' id='img'>
-    <p>Real name:<strong> {$artista['real_name']}<strong></p>
+    <p>Real name:<strong> {$artista['real_name']}</strong></p>
     <h3>Biografía: </h3>
     <p>{$artista['bio']}</p>
     <section id='canciones_po'>
         <h2>Canciones más populares</h2>
         <ul id='lista-canciones'>";
         foreach($canciones as $cancion){
-            $encodedName = urlencode($artista['id']);
             $htmlContent.="<li>
-                <a href='/detalle_cancion/{$encodedName}'><p>{$cancion['title']}</p></a>
+                <a href='/detalle_cancion/{$cancion['id']}/{$encodedName}'><p>{$cancion['title']}</p></a>
             </li>";
         }
     $htmlContent.=" </ul>
@@ -136,6 +128,64 @@ $app->get('/detalle_artistas/{name}', function($request, Response $response,$arg
 
 $response ->getBody()->write($htmlContent);
 return $response->withHeader('Content-Type','text/html');
+});
+
+//Canción página de detalle
+$app->get('/detalle_cancion/{id}/{name}', function ($request, Response $response,$args) use($pdo){
+    $id=$args['id'];
+    $stage_name = str_replace('+', ' ', htmlspecialchars($args['name']));
+    $stm=$pdo->prepare("SELECT * from songs where id=:id");
+    $stm->bindValue(":id",$id,PDO::PARAM_INT);
+    $stm->execute();
+    $canciones=$stm->fetchALL(PDO::FETCH_ASSOC);
+    $cancion=$canciones[0];
+
+     if (!$cancion) {
+        $response->getBody()->write("Canción no encontrada");
+        return $response->withStatus(404);
+    }
+
+    $htmlContent="<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='/css/cancion.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css'>
+    <script src='/scripts/header.js' defer></script>
+    <script src='/scripts/footer.js' defer></script>
+    <title>Canción</title>
+</head>
+<body>
+    <header id='header'>
+    </header>
+    <div id='container'>
+        <a href='/detalle_artistas/{$stage_name}'><i class='fa-solid fa-arrow-left'></i></a> 
+        <div id='titulo'>
+        <h2 id='can_nom'>{$cancion['title']}</h2>
+        <a href='{$cancion['youtube_url']}'><i class='fas fa-music'></i></a>
+        </div>
+        <img src='{$cancion['image_url']}' id='img_cancion' alt='foto de la cancion {$cancion['title']} '>
+        <section id='info_can'>
+        <h3><a href='/detalle_artistas/{$stage_name}'>Artista: {$stage_name}</a></h3>
+        <p><strong>Released: </strong>{$cancion['release_year']}</p>
+        <p><strong>Album: </strong>{$cancion['album']}</p>
+        <p><strong>Reproduciones: </strong>{$cancion['plays']}</p>
+        <p><strong>Historia: </strong>{$cancion['story_summary']} </p>
+        <h3>Letra: </h3>
+        <p>{$cancion['lyrics']}</p>
+        </section>
+    </div>
+    <footer id='footer'>
+    </footer>
+</body>
+
+</html>";
+
+$response ->getBody()->write($htmlContent);
+return $response->withHeader('Content-Type','text/html');
+
 });
 
 $app->run();
