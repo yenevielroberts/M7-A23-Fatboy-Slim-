@@ -223,3 +223,9 @@ footer {
     background-color: #00ffe5;
     color: black;
 }
+
+.fa-solid.fa-arrow-left{
+
+    font-size: 2rem !important;
+    color:white;
+}
