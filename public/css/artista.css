@@ -79,18 +79,22 @@ div h2 {
 }
 
 div img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+    margin: 15px;
+    display: flex;
+    float: left;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 1rem;
-    display: block;
+    margin-top: 1rem;
+    background-color: #333;
+    margin-left: 0px;
 }
 
 
 p {
     font-size: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 /* Secciones de canciones y álbumes */
@@ -129,41 +133,9 @@ a{
     width: 100%;
 }
 
-/*Álbumes*/
+#canciones_po h2{
 
-#albumes_po{
-
-    margin-top: 2rem;
-    padding: 10px;
-
-}
-
-#albumes_po img{
-
-    width: 200px;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    display: block;
-    float: left;
-}
-
-#albumes_po h3 {
-
-    font-size: 1.5rem;
-    display: inline-block;
-    padding: 0.5rem;
-    color: #00ffe5;
-}
-
-#album_info{
-    margin-top: 5px;
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
-    padding:5px;
+    margin-top: 5rem;
 }
 
 ul {
@@ -207,25 +179,10 @@ footer {
     color: #00ffe5;
 }
 
-#favBtn {
-    background-color: #1e1e1e;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-bottom: 1rem;
-    transition: background-color 0.3s;
-}
-
-#favBtn:hover {
-    background-color: #00ffe5;
-    color: black;
-}
 
 .fa-solid.fa-arrow-left{
 
     font-size: 2rem !important;
     color:white;
 }
+

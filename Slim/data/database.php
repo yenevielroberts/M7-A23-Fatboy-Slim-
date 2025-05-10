@@ -88,67 +88,67 @@ $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url,
 (6, 'Woman', 2021, 900000000, 'https://i.ytimg.com/vi/2V_uAAAH-_Q/sddefault.jpg', 'Planet Her', 'Lyrics...', 'Empoderamiento femenino con un estilo tropical.', 'https://www.youtube.com/watch?v=yxW5yuzVi8w'),
 (6, 'Kiss Me More', 2021, 1500000000, 'https://media.pitchfork.com/photos/606fd4275aedaea021481c58/1:1/w_3096,h_3096,c_limit/doja-cat-sza.jpg', 'Planet Her', 'Lyrics...', 'Explora el deseo y la atracción romántica.', 'https://www.youtube.com/watch?v=0EVVKs6DQLo'),
 (6, 'Moo!', 2018, 400000000, 'https://i.ytimg.com/vi/AD_TWloJ310/maxresdefault.jpg', 'Moo!', 'Lyrics...', 'Una canción divertida y excéntrica sobre su personalidad.', 'https://www.youtube.com/watch?v=5kqfKz0zKxA'),
-(6, 'Juicy', 2019, 700000000, 'https://example.com/juicy.jpg', 'Hot Pink', 'Lyrics...', 'Una mezcla de empoderamiento y sensualidad.', 'https://www.youtube.com/watch?v=7LnBvuzjpr4'),
-(6, 'Like That', 2020, 600000000, 'https://example.com/likethat.jpg', 'Hot Pink', 'Lyrics...', 'Un tema pegajoso que mezcla rap y pop.', 'https://www.youtube.com/watch?v=LDZX4ooRsWs');");
+(6, 'Juicy', 2019, 700000000, 'https://stupiddope.com/wp-content/uploads/2019/08/Doja-Cat-Juicy-Remix-Tyga-1200x900.jpg', 'Hot Pink', 'Lyrics...', 'Una mezcla de empoderamiento y sensualidad.', 'https://www.youtube.com/watch?v=7LnBvuzjpr4'),
+(6, 'Like That', 2020, 600000000, 'https://i.ytimg.com/vi/XEJLuJyxLDE/maxresdefault.jpg', 'Hot Pink', 'Lyrics...', 'Un tema pegajoso que mezcla rap y pop.', 'https://www.youtube.com/watch?v=LDZX4ooRsWs');");
 
 
 /*Insertar canciones para The Chainsmokers */
 $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url, album, lyrics, story_summary, youtube_url) VALUES
-(7, 'Closer', 2016, 2000000000, 'https://example.com/closer.jpg', 'Collage', 'Lyrics...', 'Historia de una relación atrapada entre el pasado y el presente.', 'https://www.youtube.com/watch?v=PT2_F-1esPk'),
-(7, 'Paris', 2017, 900000000, 'https://example.com/paris.jpg', 'Memories...Do Not Open', 'Lyrics...', 'Una reflexión sobre la juventud y los recuerdos.', 'https://www.youtube.com/watch?v=RhU9MZ98jxo'),
-(7, 'Something Just Like This', 2017, 1800000000, 'https://example.com/something.jpg', 'Memories...Do Not Open', 'Lyrics...', 'La búsqueda de un amor auténtico.', 'https://www.youtube.com/watch?v=FM7MFYoylVs'),
-(7, 'Don’t Let Me Down', 2016, 1400000000, 'https://example.com/dontlet.jpg', 'Collage', 'Lyrics...', 'Temor a perder la relación en un momento crítico.', 'https://www.youtube.com/watch?v=Io0fBr1XBUA'),
-(7, 'Roses', 2015, 950000000, 'https://example.com/roses.jpg', 'Collage', 'Lyrics...', 'Explora el amor espontáneo y la alegría compartida.', 'https://www.youtube.com/watch?v=FyASdjZE0R0'),
-(7, 'Call You Mine', 2019, 700000000, 'https://example.com/callyoumine.jpg', 'World War Joy', 'Lyrics...', 'El deseo de mantener una relación fuerte y unida.', 'https://www.youtube.com/watch?v=0zGcUoRlhmw');");
+(7, 'Closer', 2016, 2000000000, 'https://i1.sndcdn.com/artworks-000179073287-3ur3or-t500x500.jpg', 'Collage', 'Lyrics...', 'Historia de una relación atrapada entre el pasado y el presente.', 'https://www.youtube.com/watch?v=PT2_F-1esPk'),
+(7, 'Paris', 2017, 900000000, 'https://upload.wikimedia.org/wikipedia/en/e/e8/Paris_%28Official_Single_Cover%29_by_The_Chainsmokers.png', 'Memories...Do Not Open', 'Lyrics...', 'Una reflexión sobre la juventud y los recuerdos.', 'https://www.youtube.com/watch?v=RhU9MZ98jxo'),
+(7, 'Something Just Like This', 2017, 1800000000, 'https://upload.wikimedia.org/wikipedia/en/5/57/Something_Just_Like_This.png', 'Memories...Do Not Open', 'Lyrics...', 'La búsqueda de un amor auténtico.', 'https://www.youtube.com/watch?v=FM7MFYoylVs'),
+(7, 'Don’t Let Me Down', 2016, 1400000000, 'https://i1.sndcdn.com/artworks-9Fn34Td0doc5xaUF-i33pZg-t500x500.jpg', 'Collage', 'Lyrics...', 'Temor a perder la relación en un momento crítico.', 'https://www.youtube.com/watch?v=Io0fBr1XBUA'),
+(7, 'Roses', 2015, 950000000, 'https://i1.sndcdn.com/artworks-cJey8vEOF1nK-0-t500x500.jpg', 'Collage', 'Lyrics...', 'Explora el amor espontáneo y la alegría compartida.', 'https://www.youtube.com/watch?v=FyASdjZE0R0'),
+(7, 'Call You Mine', 2019, 700000000, 'https://cdn-images.dzcdn.net/images/cover/65f945c76595ef7a145964267ecb3afe/0x1900-000000-80-0-0.jpg', 'World War Joy', 'Lyrics...', 'El deseo de mantener una relación fuerte y unida.', 'https://www.youtube.com/watch?v=0zGcUoRlhmw');");
 
 
 /*Insertar canciones para Dean Lewis */
 $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url, album, lyrics, story_summary, youtube_url) VALUES
-(9, 'Be Alright', 2018, 900000000, 'https://example.com/bealright.jpg', 'A Place We Knew', 'Lyrics...', 'Sobre la esperanza y la sanación después de la ruptura.', 'https://www.youtube.com/watch?v=2Vv-BfVoq4g'),
-(9, 'Waves', 2016, 500000000, 'https://example.com/waves.jpg', 'Same Kind of Different', 'Lyrics...', 'Reflexión sobre la naturaleza volátil de la vida.', 'https://www.youtube.com/watch?v=J3O5Oe5GzUY'),
-(9, 'Stay Awake', 2019, 300000000, 'https://example.com/stayawake.jpg', 'Single', 'Lyrics...', 'Cansancio emocional y la lucha interna de quedarse despierto.', 'https://www.youtube.com/watch?v=HqUeSjsYLtI'),
-(9, 'Half a Man', 2019, 200000000, 'https://example.com/halfman.jpg', 'A Place We Knew', 'Lyrics...', 'La sensación de no ser completo tras una pérdida.', 'https://www.youtube.com/watch?v=8kPyrq8r4-A'),
-(9, 'The Hate I Need', 2019, 150000000, 'https://example.com/hate.jpg', 'Same Kind of Different', 'Lyrics...', 'Explora los conflictos internos y la necesidad de liberarse.', 'https://www.youtube.com/watch?v=1HnOFwqpLRQ'),
-(9, 'You', 2020, 100000000, 'https://example.com/you.jpg', 'Single', 'Lyrics...', 'Reflexión sobre el amor incondicional y la vulnerabilidad.', 'https://www.youtube.com/watch?v=5yXQJBU8A28');");
+(9, 'Be Alright', 2018, 900000000, 'https://upload.wikimedia.org/wikipedia/en/1/11/Be_Alright_by_Dean_Lewis.jpg', 'A Place We Knew', 'Lyrics...', 'Sobre la esperanza y la sanación después de la ruptura.', 'https://youtu.be/I0czvJ_jikg?feature=shared'),
+(9, 'Waves', 2016, 500000000, 'https://upload.wikimedia.org/wikipedia/en/1/16/Waves_%28acoustic%29_by_Dean_Lewis.jpg', 'Same Kind of Different', 'Lyrics...', 'Reflexión sobre la naturaleza volátil de la vida.', 'https://youtu.be/dKlgCk3IGBg?feature=shared'),
+(9, 'Stay Awake', 2019, 300000000, 'https://upload.wikimedia.org/wikipedia/en/7/77/Stay_Awake_by_Dean_Lewis.jpg', 'Single', 'Lyrics...', 'Cansancio emocional y la lucha interna de quedarse despierto.', 'https://youtu.be/PzSQJwpljg0?feature=shared'),
+(9, 'Half a Man', 2019, 200000000, 'https://assets.pikiran-rakyat.com/crop/0x0:0x0/750x500/photo/2021/02/26/1523578227.jpg', 'A Place We Knew', 'Lyrics...', 'La sensación de no ser completo tras una pérdida.', 'https://youtu.be/Kua2dDhqzZw?feature=shared'),
+(9, 'The Hate I Need', 2019, 150000000, 'https://i.ytimg.com/vi/vLO9r6Vd6ec/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCuh-9PqvU4VWSwrPV1lPl5eQ8Kaw', 'Same Kind of Different', 'Lyrics...', 'Explora los conflictos internos y la necesidad de liberarse.', 'https://youtu.be/5hI7f2WCbz0?feature=shared'),
+(9, 'You', 2020, 100000000, 'https://cdn-images.dzcdn.net/images/cover/fbe671014dbc03c7cdf70e6a51301128/0x1900-000000-80-0-0.jpg', 'Single', 'Lyrics...', 'Reflexión sobre el amor incondicional y la vulnerabilidad.', 'https://youtu.be/GurljGjfrVs?feature=shared');");
 
 /* Insertar canciones para Muse */
 $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url, album, lyrics, story_summary, youtube_url) VALUES
-(10, 'Uprising', 2009, 1000000000, 'https://example.com/uprising.jpg', 'The Resistance', 'Lyrics...', 'Una protesta contra el control social y la manipulación.', 'https://www.youtube.com/watch?v=w8KQmps-Sog'),
-(10, 'Starlight', 2006, 800000000, 'https://example.com/starlight.jpg', 'Black Holes and Revelations', 'Lyrics...', 'Una oda a la soledad y el amor inalcanzable.', 'https://www.youtube.com/watch?v=Pgum6OT_VH8'),
-(10, 'Madness', 2012, 950000000, 'https://example.com/madness.jpg', 'The 2nd Law', 'Lyrics...', 'Refleja el caos emocional dentro de una relación tóxica.', 'https://www.youtube.com/watch?v=Ek0SgwWmF9w'),
-(10, 'Time Is on My Side', 2010, 500000000, 'https://example.com/timeis.jpg', 'The Resistance', 'Lyrics...', 'Habla sobre la paciencia y la perspectiva en el tiempo.', 'https://www.youtube.com/watch?v=1fL8s5ZzQ3I'),
-(10, 'Supermassive Black Hole', 2006, 600000000, 'https://example.com/supermassive.jpg', 'Black Holes and Revelations', 'Lyrics...', 'Una explosión de energía sobre la lucha interna.', 'https://www.youtube.com/watch?v=G_sBOsh-vyI'),
-(10, 'Pressure', 2018, 400000000, 'https://example.com/pressure.jpg', 'Simulation Theory', 'Lyrics...', 'Explora la ansiedad y la presión que enfrentan las personas en la vida moderna.', 'https://www.youtube.com/watch?v=G-sBOsh-vyI');");
+(10, 'Uprising', 2009, 1000000000, 'https://upload.wikimedia.org/wikipedia/en/thumb/2/26/MuseUprisingCDsingle.jpg/250px-MuseUprisingCDsingle.jpg', 'The Resistance', 'Lyrics...', 'Una protesta contra el control social y la manipulación.', 'https://www.youtube.com/watch?v=w8KQmps-Sog'),
+(10, 'Starlight', 2006, 800000000, 'https://m.media-amazon.com/images/M/MV5BMDUwMzExMTItYjU0Yi00YzY3LTk5ZWItOTkxZGJmMjNiYTQ0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg', 'Black Holes and Revelations', 'Lyrics...', 'Una oda a la soledad y el amor inalcanzable.', 'https://www.youtube.com/watch?v=Pgum6OT_VH8'),
+(10, 'Madness', 2012, 950000000, 'https://upload.wikimedia.org/wikipedia/en/9/9b/Muse_-_Madness.jpg', 'The 2nd Law', 'Lyrics...', 'Refleja el caos emocional dentro de una relación tóxica.', 'https://www.youtube.com/watch?v=Ek0SgwWmF9w'),
+(10, 'Time Is on My Side', 2010, 500000000, 'https://upload.wikimedia.org/wikipedia/en/4/4c/Muse_tirocd.jpg', 'The Resistance', 'Lyrics...', 'Habla sobre la paciencia y la perspectiva en el tiempo.', 'https://www.youtube.com/watch?v=1fL8s5ZzQ3I'),
+(10, 'Supermassive Black Hole', 2006, 600000000, 'https://i.scdn.co/image/ab67616d0000b27328933b808bfb4cbbd0385400', 'Black Holes and Revelations', 'Lyrics...', 'Una explosión de energía sobre la lucha interna.', 'https://www.youtube.com/watch?v=G_sBOsh-vyI'),
+(10, 'Pressure', 2018, 400000000, 'https://www.musewiki.org/images/thumb/PressureCover.jpg/300px-PressureCover.jpg', 'Simulation Theory', 'Lyrics...', 'Explora la ansiedad y la presión que enfrentan las personas en la vida moderna.', 'https://www.youtube.com/watch?v=G-sBOsh-vyI');");
 
 
 /* Insertar canciones para Chloe */
 $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url, album, lyrics, story_summary, youtube_url) VALUES
-(8, 'Have Mercy', 2021, 600000000, 'https://example.com/havemercy.jpg', 'Have Mercy', 'Lyrics...', 'Una declaración de empoderamiento y confianza en sí misma.', 'https://www.youtube.com/watch?v=Gsnrzr0Bm80'),
-(8, 'Surprise Me', 2021, 450000000, 'https://example.com/surprise.jpg', 'Single', 'Lyrics...', 'Una canción que explora las emociones de una relación que toma giros inesperados.', 'https://www.youtube.com/watch?v=example_surprise'),
-(8, 'Happy Without Me', 2021, 300000000, 'https://example.com/happywithoutme.jpg', 'Single', 'Lyrics...', 'Refleja la independencia y el empoderamiento tras una ruptura.', 'https://www.youtube.com/watch?v=example_happy'),
-(8, 'Fighting Temptation', 2022, 200000000, 'https://example.com/fighting.jpg', 'Single', 'Lyrics...', 'Una canción sobre la lucha interna entre lo correcto y lo incorrecto.', 'https://www.youtube.com/watch?v=example_fighting'),
-(8, 'Mercy', 2021, 400000000, 'https://example.com/mercy.jpg', 'Have Mercy', 'Lyrics...', 'Explora la vulnerabilidad en una relación tormentosa.', 'https://www.youtube.com/watch?v=example_mercy'),
-(8, 'I Can’t Let Go', 2021, 350000000, 'https://example.com/icant.jpg', 'Single', 'Lyrics...', 'Un tema que habla de la dificultad de dejar ir a alguien que amas.', 'https://www.youtube.com/watch?v=example_icant');");
+(8, 'Have Mercy', 2021, 600000000, 'https://thatgrapejuice.net/wp-content/uploads/2022/04/chloe-bailey-2022-11-tgj.jpeg', 'Have Mercy', 'Lyrics...', 'Una declaración de empoderamiento y confianza en sí misma.', 'https://www.youtube.com/watch?v=Gsnrzr0Bm80'),
+(8, 'Surprise Me', 2021, 450000000, 'https://i.ytimg.com/vi/ZbVobGLuk_U/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDZq0JsAVRI5b8KMl-a7sEJNTSQkQ', 'Single', 'Lyrics...', 'Una canción que explora las emociones de una relación que toma giros inesperados.', 'https://youtu.be/bMlJKBXU1v4?feature=shared'),
+(8, 'Happy Without Me', 2021, 300000000, 'https://static.wikia.nocookie.net/chloexhalle/images/4/4b/The_Kids_Are_Alright_-_Album_Cover.jpg/revision/latest?cb=20201119191207', 'Single', 'Lyrics...', 'Refleja la independencia y el empoderamiento tras una ruptura.', 'https://youtu.be/MFxqp_wOUx8?feature=shared'),
+(8, 'Fighting Temptation', 2022, 200000000, 'https://static.wikia.nocookie.net/chloexhalle/images/6/62/2021-8-24_Edwig_Henson_%28Instagram%29_003.jpg/revision/latest?cb=20210826015811', 'Single', 'Lyrics...', 'Una canción sobre la lucha interna entre lo correcto y lo incorrecto.', 'https://youtu.be/V3vZfEhWSdw?feature=shared'),
+(8, 'Mercy', 2021, 400000000, 'https://pyxis.nymag.com/v1/imgs/060/57e/03cb32bdba91b312abc7df39f30fca745c-chloe.2x.rsocial.w600.png', 'Have Mercy', 'Lyrics...', 'Explora la vulnerabilidad en una relación tormentosa.', 'https://www.youtube.com/watch?v=Gsnrzr0Bm80'),
+(8, 'I Can’t Let Go', 2021, 350000000, 'https://i.ytimg.com/vi/IVqKqVFs_jA/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgSShFMA8=&rs=AOn4CLB8DR8Yr59-PvRPHyvq7XkO7Tlk4Q', 'Single', 'Lyrics...', 'Un tema que habla de la dificultad de dejar ir a alguien que amas.', 'https://youtu.be/IVqKqVFs_jA?feature=shared');");
 
 
 /* Insertar canciones para Tems */
 $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url, album, lyrics, story_summary, youtube_url) VALUES
-(4, 'Essence', 2020, 1500000000, 'https://example.com/essence.jpg', 'Made in Lagos', 'Lyrics...', 'Una canción sobre el amor y la atracción profunda con un ritmo afrobeats relajado.', 'https://www.youtube.com/watch?v=example_essence'),
-(4, 'Free Mind', 2021, 800000000, 'https://example.com/freemind.jpg', 'If Orange Was a Place', 'Lyrics...', 'Sobre la introspección, la salud mental y la búsqueda de paz.', 'https://www.youtube.com/watch?v=example_freemind'),
-(4, 'Higher', 2021, 500000000, 'https://example.com/higher.jpg', 'If Orange Was a Place', 'Lyrics...', 'Una canción sobre superar los desafíos y seguir adelante con determinación.', 'https://www.youtube.com/watch?v=example_higher'),
-(4, 'Try Me', 2019, 600000000, 'https://example.com/tryme.jpg', 'Tems EP', 'Lyrics...', 'Refleja la actitud de no dejarse manipular o derrotar en una relación.', 'https://www.youtube.com/watch?v=example_tryme'),
-(4, 'Damages', 2020, 700000000, 'https://example.com/damages.jpg', 'If Orange Was a Place', 'Lyrics...', 'Una reflexión sobre las cicatrices emocionales de una relación fallida.', 'https://www.youtube.com/watch?v=example_damages'),
-(4, 'The Key', 2021, 450000000, 'https://example.com/thekey.jpg', 'If Orange Was a Place', 'Lyrics...', 'Habla de la búsqueda del amor verdadero y la conexión genuina.', 'https://www.youtube.com/watch?v=example_thekey');");
+(4, 'Essence', 2020, 1500000000, 'https://i.scdn.co/image/ab67616d0000b273a415eca4f2d614ad1f5f3598', 'Made in Lagos', 'Lyrics...', 'Una canción sobre el amor y la atracción profunda con un ritmo afrobeats relajado.', 'https://youtu.be/FeMeopQqB6s?feature=shared'),
+(4, 'Free Mind', 2021, 800000000, 'https://thenativemag.com/wp-content/uploads/2020/09/Screenshot-2020-09-29-at-16.03.56.png', 'If Orange Was a Place', 'Lyrics...', 'Sobre la introspección, la salud mental y la búsqueda de paz.', 'https://youtu.be/mlaTJrQdmiY?feature=shared'),
+(4, 'Higher', 2021, 500000000, 'https://i1.sndcdn.com/artworks-0NIc4id66GQMCZzE-QJ3zJw-t500x500.jpg', 'If Orange Was a Place', 'Lyrics...', 'Una canción sobre superar los desafíos y seguir adelante con determinación.', 'https://youtu.be/jOp8SFadvkk?feature=shared'),
+(4, 'Try Me', 2019, 600000000, 'https://i.ytimg.com/vi/JzLPN9Xovxs/sddefault.jpg', 'Tems EP', 'Lyrics...', 'Refleja la actitud de no dejarse manipular o derrotar en una relación.', 'https://youtu.be/hVEp-P2-rqY?feature=shared'),
+(4, 'Damages', 2020, 700000000, 'https://i.ytimg.com/vi/8kLrrQJzaBk/maxresdefault.jpg', 'If Orange Was a Place', 'Lyrics...', 'Una reflexión sobre las cicatrices emocionales de una relación fallida.', 'https://youtu.be/EOrFWBjiRik?feature=shared'),
+(4, 'The Key', 2021, 450000000, 'https://i.ytimg.com/vi/SmxjaA8aRxE/maxresdefault.jpg', 'If Orange Was a Place', 'Lyrics...', 'Habla de la búsqueda del amor verdadero y la conexión genuina.', 'https://youtu.be/g6YJXT7wWfc?feature=shared');");
 
 
 /* Insertar canciones para Myles Smith */
 $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url, album, lyrics, story_summary, youtube_url) VALUES
-(2, 'Rain', 2020, 300000000, 'https://example.com/rain.jpg', 'Rain EP', 'Lyrics...', 'Una balada emocional sobre superar la tristeza y la tormenta emocional.', 'https://www.youtube.com/watch?v=example_rain'),
-(2, 'Lost In You', 2021, 250000000, 'https://example.com/lostinyou.jpg', 'Single', 'Lyrics...', 'Sobre el amor profundo y la devoción a alguien que te hace perder el control.', 'https://www.youtube.com/watch?v=example_lostinyou'),
-(2, 'The One', 2021, 400000000, 'https://example.com/theone.jpg', 'Single', 'Lyrics...', 'Refleja la búsqueda del amor verdadero y cómo ese amor te cambia para siempre.', 'https://www.youtube.com/watch?v=example_theone'),
-(2, 'Hold Me Tight', 2022, 220000000, 'https://example.com/holdmetight.jpg', 'Hold Me Tight', 'Lyrics...', 'Una canción sobre la necesidad de amor y compañía en tiempos difíciles.', 'https://www.youtube.com/watch?v=example_holdmetight'),
-(2, 'With You', 2022, 180000000, 'https://example.com/withyou.jpg', 'With You EP', 'Lyrics...', 'Una balada sobre la importancia de estar con alguien que te apoya en todo momento.', 'https://www.youtube.com/watch?v=example_withyou'),
-(2, 'Back To You', 2023, 250000000, 'https://example.com/backtoyou.jpg', 'Single', 'Lyrics...', 'Habla sobre la necesidad de regresar a alguien especial a pesar de las dificultades que se han vivido.', 'https://www.youtube.com/watch?v=example_backtoyou');");
+(2, 'Rain', 2020, 300000000, 'https://cdn-p.smehost.net/sites/5cfaf3980b294dd89a79248f35560b2f/wp-content/uploads/2024/05/mylessmith-stargazing-packshot.jpg', 'Rain EP', 'Lyrics...', 'Una balada emocional sobre superar la tristeza y la tormenta emocional.', 'https://youtu.be/ki3gN751CLc?feature=shared'),
+(2, 'Lost In You', 2021, 250000000, 'https://www.nme.com/wp-content/uploads/2025/04/myles-smith@2000x1270.jpg', 'Single', 'Lyrics...', 'Sobre el amor profundo y la devoción a alguien que te hace perder el control.', 'https://youtu.be/fZUp0zaQNcA?feature=shared'),
+(2, 'The One', 2021, 400000000, 'https://www.nme.com/wp-content/uploads/2025/04/myles-smith@2000x1270.jpg', 'Single', 'Lyrics...', 'Refleja la búsqueda del amor verdadero y cómo ese amor te cambia para siempre.', 'https://youtu.be/9VbDkDALT7w?feature=shared'),
+(2, 'Hold Me Tight', 2022, 220000000, 'https://www.nme.com/wp-content/uploads/2025/04/myles-smith@2000x1270.jpg', 'Hold Me Tight', 'Lyrics...', 'Una canción sobre la necesidad de amor y compañía en tiempos difíciles.', 'https://youtu.be/tKml80alH3Y?feature=shared'),
+(2, 'With You', 2022, 180000000, 'https://www.1057thepoint.com/wp-content/uploads/2024/08/M_mylessmith_082324.jpg', 'With You EP', 'Lyrics...', 'Una balada sobre la importancia de estar con alguien que te apoya en todo momento.', 'https://youtu.be/fZUp0zaQNcA?feature=shared'),
+(2, 'Back To You', 2023, 250000000, 'https://pmstudio.com/pmstudio/images/Myles-Smith2.jpg', 'Single', 'Lyrics...', 'Habla sobre la necesidad de regresar a alguien especial a pesar de las dificultades que se han vivido.', 'https://youtu.be/9VbDkDALT7w?feature=shared');");
 
 
 

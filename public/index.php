@@ -106,7 +106,7 @@ $app->get('/detalle_artistas/{name}', function($request, Response $response,$arg
    <a href='/'><i class='fa-solid fa-arrow-left'></i></a> 
     <h2 id='art_nom'>{$artista['stage_name']}</h2>
     <img src='{$artista['image_url']}' id='img'>
-    <p><strong>Real name: </strong>{$artista['real_name']}</p>
+    <h3><strong>Real name: </strong>{$artista['real_name']}</h3>
     <p><strong>Debut year: </strong>{$artista['debut_year']}</p>
     <p><strong>Top songs: </strong>{$artista['top_songs']}</p>
     <h3>Biografía: </h3>
@@ -164,8 +164,8 @@ $app->get('/detalle_cancion/{id}/{name}', function ($request, Response $response
     <div id='container'>
         <a href='/detalle_artistas/{$stage_name}'><i class='fa-solid fa-arrow-left'></i></a> 
         <div id='titulo'>
-        <h2 id='can_nom'>{$cancion['title']}</h2>
-        <a href='{$cancion['youtube_url']}'><i class='fas fa-music'></i></a>
+        <h2 id='can_nom'>{$cancion['title']}    -></h2>
+        <a href='{$cancion['youtube_url']}' target='_blanck'><i class='fas fa-music'></i></a>
         </div>
         <img src='{$cancion['image_url']}' id='img_cancion' alt='foto de la cancion {$cancion['title']} '>
         <section id='info_can'>
@@ -174,8 +174,6 @@ $app->get('/detalle_cancion/{id}/{name}', function ($request, Response $response
         <p><strong>Album: </strong>{$cancion['album']}</p>
         <p><strong>Reproduciones: </strong>{$cancion['plays']}</p>
         <p><strong>Historia: </strong>{$cancion['story_summary']} </p>
-        <h3>Letra: </h3>
-        <p>{$cancion['lyrics']}</p>
         </section>
     </div>
     <footer id='footer'>
