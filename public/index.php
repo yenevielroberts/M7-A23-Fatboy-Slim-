@@ -54,7 +54,7 @@ $app->get('/', function (Request $request, Response $response) use ($pdo){
             $htmlContent.="
             <div>
             <h3>{$artista['stage_name']}</h3>
-            <a href='detalle_artistas.html?name={$artista['stage_name']}'><img src='{$artista['image_url']}'></a>
+            <a href='detalle_artistas?name={$artista['stage_name']}'><img src='{$artista['image_url']}'></a>
             </div>";
         }
         $htmlContent.='</div>
@@ -86,6 +86,12 @@ $app->get('/', function (Request $request, Response $response) use ($pdo){
     $response->getBody()->write("$htmlContent");
     return $response->withHeader('Content-type', 'text/html');
    
+});
+
+
+$app->get('detalle_artistas?name', function($resquest, Response $response) use($pdo){
+
+
 });
 
 $app->run();
