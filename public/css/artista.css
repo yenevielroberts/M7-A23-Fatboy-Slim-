@@ -28,18 +28,12 @@ nav {
     flex-wrap: wrap;
 }
 
-nav h2 {
+#titulo_nav{
+    width: 300px;
     font-size: 1.8rem;
     color: #00ffe5;
 }
 
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 1.5rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
 
 nav a {
     display: flex;

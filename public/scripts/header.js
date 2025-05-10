@@ -2,7 +2,7 @@ const header = document.getElementById("header");
 
 const nav = document.createElement("nav")
 nav.innerHTML = `
-            <h2>El universo musical</h2>
+            <h2><a href="/" id="titulo_nav">El universo musical</a></h2>
             <div id="enlancesNav">
                 <a href="/"><i class="fas fa-search"></i></a>
                 <a href="/">Home</a>
