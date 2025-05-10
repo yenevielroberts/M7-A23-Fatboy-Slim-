@@ -77,17 +77,17 @@ $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url,
 (5, 'Rollercoaster', 2014, 350000000, 'https://www.elblogdeyes.com/wp-content/uploads/2014/11/Bleachers-Rollercoaster.jpg', 'Strange Desire', 'Lyrics...', 'Una historia de amor corta pero intensa.', 'https://www.youtube.com/watch?v=ldk2pLyVZ4c'),
 (5, 'Don’t Take the Money', 2017, 500000000, 'https://i.ytimg.com/vi/j42ubxMSQak/maxresdefault.jpg', 'Gone Now', 'Lyrics...', 'Sobre las inseguridades dentro de una relación.', 'https://www.youtube.com/watch?v=B06qqB7bp-w'),
 (5, 'Shadow', 2017, 300000000, 'https://static.wikia.nocookie.net/jack-antonoff/images/d/df/Shadow_w_Jack_and_Arrow.jpg/revision/latest/scale-to-width-down/250?cb=20220924071651', 'Gone Now', 'Lyrics...', 'Explora los altibajos de la vida y la lucha interna.', 'https://www.youtube.com/watch?v=9Mct0OU_Py8'),
-(5, 'Chateau', 2017, 400000000, 'https://example.com/chateau.jpg', 'Gone Now', 'Lyrics...', 'Refleja la búsqueda de un lugar emocional seguro.', 'https://www.youtube.com/watch?v=YE68EpoHT3k'),
-(5, 'Hate That You Know Me', 2019, 250000000, 'https://example.com/hate.jpg', 'Take the Money and Run', 'Lyrics...', 'Conflictos personales en relaciones complicadas.', 'https://www.youtube.com/watch?v=aA_nHHxKll0');
+(5, 'Chateau', 2017, 400000000, 'https://i.scdn.co/image/ab67616d0000b273d92afcf66072c83e4b28c6bb', 'Gone Now', 'Lyrics...', 'Refleja la búsqueda de un lugar emocional seguro.', 'https://www.youtube.com/watch?v=YE68EpoHT3k'),
+(5, 'Hate That You Know Me', 2019, 250000000, 'https://i.ytimg.com/vi/dsEX4rDD3zM/sddefault.jpg', 'Take the Money and Run', 'Lyrics...', 'Conflictos personales en relaciones complicadas.', 'https://www.youtube.com/watch?v=aA_nHHxKll0');
 ");
 
 
 /*Insertar canciones para Doja Cat */
 $pdo->exec("INSERT INTO songs (artist_id, title, release_year, plays, image_url, album, lyrics, story_summary, youtube_url) VALUES
-(6, 'Say So', 2020, 1200000000, 'https://example.com/sayso.jpg', 'Hot Pink', 'Lyrics...', 'Un tema pegajoso y sensual sobre el cortejo.', 'https://www.youtube.com/watch?v=pok8H_KF1FA'),
-(6, 'Woman', 2021, 900000000, 'https://example.com/woman.jpg', 'Planet Her', 'Lyrics...', 'Empoderamiento femenino con un estilo tropical.', 'https://www.youtube.com/watch?v=yxW5yuzVi8w'),
-(6, 'Kiss Me More', 2021, 1500000000, 'https://example.com/kissme.jpg', 'Planet Her', 'Lyrics...', 'Explora el deseo y la atracción romántica.', 'https://www.youtube.com/watch?v=0EVVKs6DQLo'),
-(6, 'Moo!', 2018, 400000000, 'https://example.com/moo.jpg', 'Moo!', 'Lyrics...', 'Una canción divertida y excéntrica sobre su personalidad.', 'https://www.youtube.com/watch?v=5kqfKz0zKxA'),
+(6, 'Say So', 2020, 1200000000, 'https://static.wikia.nocookie.net/dojacat/images/3/39/Say_So_%28cover_art%29.jpg/revision/latest/scale-to-width-down/1200?cb=20240725204601', 'Hot Pink', 'Lyrics...', 'Un tema pegajoso y sensual sobre el cortejo.', 'https://www.youtube.com/watch?v=pok8H_KF1FA'),
+(6, 'Woman', 2021, 900000000, 'https://i.ytimg.com/vi/2V_uAAAH-_Q/sddefault.jpg', 'Planet Her', 'Lyrics...', 'Empoderamiento femenino con un estilo tropical.', 'https://www.youtube.com/watch?v=yxW5yuzVi8w'),
+(6, 'Kiss Me More', 2021, 1500000000, 'https://media.pitchfork.com/photos/606fd4275aedaea021481c58/1:1/w_3096,h_3096,c_limit/doja-cat-sza.jpg', 'Planet Her', 'Lyrics...', 'Explora el deseo y la atracción romántica.', 'https://www.youtube.com/watch?v=0EVVKs6DQLo'),
+(6, 'Moo!', 2018, 400000000, 'https://i.ytimg.com/vi/AD_TWloJ310/maxresdefault.jpg', 'Moo!', 'Lyrics...', 'Una canción divertida y excéntrica sobre su personalidad.', 'https://www.youtube.com/watch?v=5kqfKz0zKxA'),
 (6, 'Juicy', 2019, 700000000, 'https://example.com/juicy.jpg', 'Hot Pink', 'Lyrics...', 'Una mezcla de empoderamiento y sensualidad.', 'https://www.youtube.com/watch?v=7LnBvuzjpr4'),
 (6, 'Like That', 2020, 600000000, 'https://example.com/likethat.jpg', 'Hot Pink', 'Lyrics...', 'Un tema pegajoso que mezcla rap y pop.', 'https://www.youtube.com/watch?v=LDZX4ooRsWs');");
 

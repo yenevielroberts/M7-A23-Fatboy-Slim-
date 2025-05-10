@@ -105,9 +105,10 @@ $app->get('/detalle_artistas/{name}', function($request, Response $response,$arg
     <div id='container'>
    <a href='/'><i class='fa-solid fa-arrow-left'></i></a> 
     <h2 id='art_nom'>{$artista['stage_name']}</h2>
-    <button id='favBtn'><i class='fa-regular fa-heart'></i> Agregar a favoritos</button>
     <img src='{$artista['image_url']}' id='img'>
-    <p>Real name:<strong> {$artista['real_name']}</strong></p>
+    <p><strong>Real name: </strong>{$artista['real_name']}</p>
+    <p><strong>Debut year: </strong>{$artista['debut_year']}</p>
+    <p><strong>Top songs: </strong>{$artista['top_songs']}</p>
     <h3>Biografía: </h3>
     <p>{$artista['bio']}</p>
     <section id='canciones_po'>
