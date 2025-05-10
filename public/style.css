@@ -1,0 +1,159 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header y navegación */
+header {
+    background: #1e1e1e;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav h2 {
+    font-size: 1.8rem;
+    color: #00ffe5;
+}
+
+nav a {
+    display: flex;
+    width: 100px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a:hover {
+    color: #00ffe5;
+}
+
+#enlancesNav{
+    width: 600px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Secciones principales */
+section {
+    padding: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #00ffe5;
+    /*display: inline-block;*/
+    padding-bottom: 0.5rem;
+    width: 400px;
+}
+
+#lista-artistas > div,
+#lista-canciones > div,
+#lista-albumes > div {
+    display: inline-block;
+    background: #1f1f1f;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 255, 229, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover solo para cada tarjeta individual */
+#lista-artistas > div:hover,
+#lista-canciones > div:hover,
+#lista-albumes > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 255, 229, 0.3);
+}
+
+section h3 {
+    margin-bottom: 0.5rem;
+}
+
+img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #333; /* fondo temporal si no hay imagen */
+}
+
+/* CSS para el botón de la flecha */
+.arrow-button {
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid #00ffe5;
+    color: #00ffe5;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.arrow-button:hover {
+    background-color: #00ffe5;
+    color: #121212;
+    transform: translateY(-5px); /* Efecto de elevación */
+}
+
+.arrow-button i {
+    margin-left: 8px; /* Espacio entre el texto y el ícono */
+}
+
+/*footer*/
+footer {
+    background: #1e1e1e;
+    padding: 2rem;
+    text-align: center;
+    color: #aaa;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: #aaa;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00ffe5;
+}
+

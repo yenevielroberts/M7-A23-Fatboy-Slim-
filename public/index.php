@@ -17,14 +17,14 @@ $app->get('/', function (Request $request, Response $response) use ($pdo){
     $stm=$pdo->query("SELECT * from artists");
     $artistas=$stm->fetchAll(PDO::FETCH_ASSOC);
 
-    $htmlContent.=`
+    $htmlContent ='
     <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\indexCss.css">
+    <link rel="stylesheet" href="style.css">
     <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="scripts/index.js" defer></script>
@@ -48,11 +48,16 @@ $app->get('/', function (Request $request, Response $response) use ($pdo){
 
     <section id="artitas">
         <h2>Artistas más escuchados</h2>
-        <div id="lista-artistas">
-        </div>
-        <button id="verMasArtistas" class="arrow-button">
-            <i class="fas fa-chevron-down"></i> <!-- Ícono de flecha -->
-        </button>
+        <div id="lista-artistas">';
+        foreach($artistas as $artista){
+
+            $htmlContent.="
+            <div>
+            <h3>{$artista['stage_name']}</h3>
+            <a href='detalle_artistas.html?name={$artista['stage_name']}'><img src='{$artista['image_url']}'></a>
+            </div>";
+        }
+        $htmlContent.='</div>
     </section>
 
     <section id="canciones">
@@ -60,14 +65,6 @@ $app->get('/', function (Request $request, Response $response) use ($pdo){
         <div id="lista-canciones">
         </div>
         <button id="verMasCanciones" class="arrow-button">
-            <i class="fas fa-chevron-down"></i> <!-- Ícono de flecha -->
-        </button>
-    </section>
-
-    <section id="albumes">
-        <h2>Álbumes recomendados</h2>
-        <div id="lista-albumes">
-        <button id="verMasAlbumes" class="arrow-button">
             <i class="fas fa-chevron-down"></i> <!-- Ícono de flecha -->
         </button>
     </section>
@@ -84,21 +81,11 @@ $app->get('/', function (Request $request, Response $response) use ($pdo){
     </footer>
 </body>
 
-</html>
-    
-    
-    
-    `;
+</html>';
 
-    $response->getBody()->write($htmlContent);
+    $response->getBody()->write("$htmlContent");
     return $response->withHeader('Content-type', 'text/html');
    
-});
-
-$app->get('/hello/{name}', function (Request $request, Response $response, $args) {
-    $name = $args['name'];
-    $response->getBody()->write("Hello, $name");
-    return $response;
 });
 
 $app->run();
